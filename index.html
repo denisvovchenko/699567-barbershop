@@ -6,7 +6,187 @@
   </head>
   <body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Профессиональный HTML и CSS, уровень 1</a>».</p>
+  	<!-- Header -->
+
+  	<header class="main-header">
+
+			<nav class="main-nav">
+				
+				<a class="main-logo">
+	  			<img src="img/index-logo. png" alt="Логотип барбершопа 'Бородинский'" width="371" height="155">
+	  		</a>
+
+	  		<ul class="site-nav">
+	  			<li><a href="#">ИНФОРМАЦИЯ</a></li>
+	  			<li><a href="#">НОВОСТИ</a></li>
+	  			<li><a href="#">ПРАЙС-ЛИСТ</a></li>
+	  			<li><a href="#">МАГАЗИН</a></li>
+	  			<li><a href="#">КОНТАКТЫ</a></li>
+	  		</ul>
+
+				<ul class="user-nav">
+					<li class="login-btn">ВХОД</li>
+				</ul>
+
+			</nav>
+
+
+  	</header>
+
+
+  	<!-- Main -->
+
+
+  	<main class="container">
+
+
+  		<h1 class="visually-hidden">Барбершоп "Бородинский"</h1>
+
+
+  		<section class="features-block">
+  			
+				<h2 class="visually-hidden">Наши особенности</h2>
+
+				<ul class="features">
+					<li class="features-item">
+						<h3 class="features-item-title">БЫСТРО</h3>
+						<p class="features-item-description">МЫ ДЕЛАЕМ СВОЮ РАБОТУ БЫСТРО! ДВА ЧАСА ПРОЛЕТЯТ НЕЗАМЕТНО И ВЫ — СЧАСТЛИВЫЙ ОБЛАДАТЕЛЬ СТИЛЬНОЙ СТРИЖКИ-МИНУТКИ!</p>
+					</li>
+					<li class="features-item">
+						<h3 class="features-item-title">КРУТО</h3>
+						<p class="features-item-description">ЗАБУДЬТЕ, КАК ВЫ СТРИГЛИСЬ РАНЬШЕ. МЫ СДЕЛАЕМ ИЗ ВАС ЗВЕЗДУ ФУТБОЛА ИЛИ КИНО! ВО ВСЯКОМ СЛУЧАЕ ВНЕШНЕ.</p>
+					</li>
+					<li class="features-item">
+						<h3 class="features-item-title">ДОРОГО</h3>
+						<p class="features-item-description">НАШИ МАСТЕРА — ПРОФЕССИОНАЛЫ СВОЕГО ДЕЛА И НЕ МОГУТ СТОИТЬ ДЕШЕВО. К ТОМУ ЖЕ, РАЗВЕ ЦЕНА НЕ ДАЕТ ОПРЕДЕЛЕНЫЙ СТАТУС?</p>
+					</li>
+				</ul>
+
+  		</section>
+
+
+  		<section class="news-block">
+  			
+				<h2 class="news-title">НОВОСТИ</h2>
+
+				<p class="news-post">
+					НАМ НАКОНЕЦ ЗАВЕЗЛИ ЯГЕРМАЙСТЕР! ТЕПЕРЬ ВЫ МОЖЕТЕ ПРОПУСТИТЬ СТАКАНЧИК ВО ВРЕМЯ СТРИЖКИ
+					<time datetime="2018-01-11">11 января</time>
+				</p>
+				<p class="news-post">
+					В НАШЕЙ КОМАНДЕ ПОПОЛНЕНИЕ, БОРИС «БРИТВА» СТРИГУНЕЦ, ОБЛАДAТЕЛЬ МНОЖЕСТВА ТИТУЛОВ И НАГРАД ПОПОЛНИЛ НАШИ СТРОЙНЫЕ РЯДЫ
+					<time datetime="2018-01-18">18 января</time>
+				</p>
+				<a href="#" class="btn">ВСЕ НОВОСТИ</a>
+
+  		</section>
+
+
+  		<section class="gallery-block">
+  			
+				<h2 class="gallery-title">ФОТОГАЛЕРЕЯ</h2>
+
+				<img src="img/gallery-img. png" alt="Фото барбершопа" width="328" height="164">
+
+				<button type="button" class="btn gallery-btn-prev">НАЗАД</button>
+
+				<button type="button" class="btn gallery-btn-next">ВПЕРЕД</button>
+
+  		</section>
+
+
+  		<article class="contacts-block">
+  			
+  			<h2 class="contacts-title">КОНТАКТНАЯ ИНФОРМАЦИЯ</h2>
+
+  			<p class="contacts">
+  				БАРБЕРШОП «БОРОДИНСКИЙ»<br>
+  				АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, Б. КОНЮШЕННАЯ, Д. 19/8<br>
+  				ТЕЛЕФОН: +7 (495) 666-02-66
+  			</p>
+
+  			<p class="open-hours">
+  				ВРЕМЯ РАБОТЫ:<br>
+  				ПН—ПТ: С 10:00 ДО 22:00<br>
+  				СБ—ВС: С 10:00 ДО 19:00
+  			</p>
+
+  			<a href="#" class="btn map-btn">КАК ПРОЕХАТЬ</a>
+
+  			<button type="button" class="btn feedback-btn">ОБРАТНАЯ СВЯЗЬ</button>
+
+  		</article>
+
+
+  		<section class="order-block">
+  			
+				<h2 class="order-title"></h2>
+
+				<p class="description"></p>
+
+				<form action="" class="order-form">
+
+					<label for="date-field">ДАТА</label>
+					<input type="date" id="date-field" value="2017-10-08">
+
+					<label for="time-field">ВРЕМЯ</label>
+					<input type="time" id="time-field" value="10:00">
+
+					<label for="name-field">ВАШЕ ИМЯ</label>
+					<input type="text" id="name-field" placeholder="Борода">
+
+					<label for="phone-field">ТЕЛЕФОН</label>
+					<input type="phone" id="phone-field" placeholder="+7 123 456-78-90">
+
+					<button type="button" class="btn order-form-btn">ОТПРАВИТЬ</button>
+
+				</form>
+
+  		</section>
+
+
+  	</main>
+
+
+  	<!-- Footer -->
+
+
+  	<footer class="main-footer">
+
+
+  		<p class="footer-contacts">
+  			БАРБЕРШОП «БОРОДИНСКИЙ»<br>
+  			АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8<br>
+  			<a href="#">КАК НАС НАЙТИ?</a><br>
+  			ТЕЛЕФОН: +7 (495) 666-02-66
+  		</p>
+
+
+  		<div class="footer-social">
+
+  			<b>ДАВАЙТЕ ДРУЖИТЬ!</b>
+
+  			<ul>
+  				<li class="social-btn social-btn-vkontakte"><a href="https://www.vk.com">ВКонтакте</a></li>
+  				<li class="social-btn social-btn-facebook"><a href="https://www.facebook.com">Facebook</a></li>
+  				<li class="social-btn social-btn-instagram"><a href="https://www.instagram.com">Instagram</a></li>
+  			</ul>
+
+  		</div>
+
+
+  		<div class="footer-made-in">
+
+  			<b>РАЗРАБОТАНО:</b>
+
+  			<a href="https://www.htmlacademy.ru">html academy</a>
+
+  		</div>
+
+
+  	</footer>
+
+
 
   </body>
 </html>

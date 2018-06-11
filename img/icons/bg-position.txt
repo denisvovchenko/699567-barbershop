@@ -1,0 +1,19 @@
+.bg-facebook {
+    width: 11px; height: 22px;
+    background: url('css_sprites.png') -10px -10px;
+}
+
+.bg-instagram {
+    width: 20px; height: 20px;
+    background: url('css_sprites.png') -75px -10px;
+}
+
+.bg-login {
+    width: 14px; height: 14px;
+    background: url('css_sprites.png') -41px -10px;
+}
+
+.bg-vk {
+    width: 27px; height: 15px;
+    background: url('css_sprites.png') -115px -10px;
+}
