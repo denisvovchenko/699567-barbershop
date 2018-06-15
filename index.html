@@ -2,7 +2,8 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Барбершоп</title>
+    <title>Барбершоп «Бородинский»</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:700&amp;subset=cyrillic-ext" rel="stylesheet">
   </head>
   <body>
 		
@@ -11,28 +12,30 @@
   	<header class="page-header">
 
   		<a class="main-logo">
-        <img src="img/index-logo.png" alt="Логотип барбершопа 'Бородинский'"  width="371" height="155">
+        <img src="img/index-logo.png" alt="Логотип барбершопа «Бородинский»"  width="371" height="155">
       </a>
 
   		<nav class="main-nav">
   			<ul class="site-nav">
-  				<li class="nav-link">
+  				<li>
             <a href="#">Информация</a>
           </li>
-  				<li class="nav-link">
-            <a href="#">Новости</a></li>
-  				<li class="nav-link"><a href="#">Прайс-лист</a>
+  				<li>
+            <a href="#">Новости</a>
           </li>
-  				<li class="nav-link">
-            <a href="#">Магазин</a>
+  				<li>
+            <a href="price-list.html">Прайс-лист</a>
           </li>
-  				<li class="nav-link">
+  				<li>
+            <a href="shop.html">Магазин</a>
+          </li>
+  				<li>
             <a href="#">Контакты</a>
           </li>
   			</ul>
 
   			<ul class="user-nav">
-  				<li class="nav-link user-nav-entrance">
+  				<li class="login-link">
             <a href="#">Вход</a>
           </li>
   			</ul>
@@ -49,14 +52,14 @@
   		<section class="advantages-block">
   			<h2 class="visually-hidden">Наши преимущества</h2>
 
-  			<ul class="advantages">
+  			<ul class="advantages-list">
   				<li class="advantages-item">
   					<h3 class="advantages-title">Быстро</h3>
-  					<p class="advantages-descr">Мы делаем свою работу быстро! Два часа пролетят незаметно и вы - счастливый обладатель стрижки-минутки!</p>
+  					<p class="advantages-descr">Мы делаем свою работу быстро! Два часа пролетят незаметно и Вы - счастливый обладатель стильной стрижки-минутки!</p>
   				</li>
   				<li class="advantages-item">
   					<h3 class="advantages-title">Круто</h3>
-  					<p class="advantages-descr">Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино! Во всяком случае внешне.</p>
+  					<p class="advantages-descr">Забудьте, как Вы стриглись раньше. Мы сделаем из Вас звезду футбола или кино! Во всяком случае внешне.</p>
   				</li>
   				<li class="advantages-item">
   					<h3 class="advantages-title">Дорого</h3>
@@ -67,15 +70,17 @@
 
   		<section class="news-block">
   			<h2 class="news-title">Новости</h2>
-
-  			<div class="news-post">
-  				<p class="news-post-text">Нам наконец завезли Ягермейстер! Теперь вы можете пропустить стаканчик во время стрижки</p>
-  				<time class="news-post-date" datetime="2018-01-11">11 января</time>
-  			</div>
-  			<div class="news-post">
-  				<p class="news-post-text">В нашей команде пополнение, Борис «Бритва» Стригунец, обладатель множества титулов и наград пополнил наши стройные ряды</p>
-  				<time class="news-post-date" datetime="2018-01-18">18 января</time>
-  			</div>
+  
+        <ul class="news-list">
+    			<li class="news-post">
+    				<p class="news-post-text">Нам наконец завезли Ягермейстер! Теперь Вы можете пропустить стаканчик во время стрижки</p>
+    				<time class="news-post-date" datetime="2018-01-11">11 января</time>
+    			</li>
+    			<li class="news-post">
+    				<p class="news-post-text">В нашей команде пополнение, Борис «Бритва» Стригунец, обладатель множества титулов и наград пополнил наши стройные ряды</p>
+    				<time class="news-post-date" datetime="2018-01-18">18 января</time>
+    			</li>
+        </ul>
 
   			<a href="#" class="btn news-btn">Все новости</a>
   		</section>
@@ -83,14 +88,16 @@
   		<section class="gallery-block">
   			<h2 class="gallery-title">Фотогалерея</h2>
   			
-  			<img src="img/gallery-img.png" alt="Фото нашего салона" class="gallery-img" width="328" height="164">
+  			<a href="#" class="gallery-img">
+          <img src="img/gallery-img.png" alt="Фото нашего салона" width="328" height="164">
+        </a>
 
-  			<button type="button" class="btn gallery-prev-btn">Назад</button>
+  			<button type="button" class="btn gallery-btn gallery-back-btn">Назад</button>
 
-  			<button type="button" class="btn gallery-next-btn">Вперед</button>
+  			<button type="button" class="btn gallery-btn gallery-next-btn">Вперед</button>
   		</section>
 
-  		<article class="contacts-block">
+  		<section class="contacts-block">
   			<h2 class="contacts-title">Контактная информация</h2>
 
   			<p class="contacts-adress-phone">
@@ -108,11 +115,12 @@
   			<a href="#" class="btn open-map-btn">Как проехать</a>
   			
   			<a href="#" class="btn feedback-btn">Обратная связь</a>
-  		</article>
+  		</section>
 
   		<section class="order-block">
 				<h2 class="order-title">Записаться</h2>
-  			<p class="order-descr">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
+
+  			<p class="order-descr">Укажите желаемую дату и время и мы свяжемся с Вами для подтверждения брони</p>
 
   			<form action="." method="get" class="order-form">
   				<p class="order-form-input-area">
@@ -132,14 +140,46 @@
   				
   				<p class="order-form-input-area">
   					<label for="phone-field" class="order-form-label">Телефон</label>
-  					<input type="phone" id="phone-field" placeholder="+7 123 456-78-90">
+  					<input type="tel" id="phone-field" placeholder="+7 123 456-78-90">
   				</p>
 
   				<button type="submit" class="btn order-form-btn">Отправить</button>
   			</form>
   		</section>
 
+      <section class="modal modal-login">
+        <h2 class="login-title">Личный кабинет</h2>
 
+        <p class="login-descr">Введите свой логин и пароль</p>
+
+        <form action="." method="get" class="login-form">
+          <label class="input-area">
+            <span class="visually-hidden">Введите Ваш логин</span>
+            <input type="text" placeholder="Логин">
+          </label>
+          <label class="input-area">
+            <span class="visually-hidden">Введите Ваш пароль</span>
+            <input type="password" placeholder="Пароль">
+          </label>
+          <label class="input-area">
+            <input type="checkbox" name="remember-me" checked>
+            Запомните меня
+          </label>
+
+          <a href="#" class="forgot-password">Я забыл пароль!</a>
+
+          <button type="submit">Войти</button>
+
+          <button type="button"><span class="visually-hidden">Закрыть окно входа</span></button>
+        </form>
+      </section>
+
+      <section class="modal modal-map">
+        <h2 class="visually-hidden">Как до нас добраться</h2>
+        
+        <img src="img/modal-map.png" alt="Карта с нашим адресом" class="map-img">
+        <button type="button" class="map-close-btn">Закрыть окно с картой</button>
+      </section>
 
   	</main>
 
@@ -150,23 +190,29 @@
 			<p class="footer-contacts">
 				Барбершоп "Бородинский"<br>
         Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
-				<a href="" class="map-link">Как нас найти?</a><br>
+				<a href="#" class="map-link">Как нас найти?</a><br>
         Телефон: +7 (495) 666-02-66
 			</p>
 
 			<div class="footer-social">
-				<span class="footer-social-title">Давайте дружить!</span>
+				<b class="footer-social-title">Давайте дружить!</b>
 				<ul class="footer-social-networks">
-					<li class="social-btn social-btn-vk"><a href="https://www.vk.com">Вконтакте</a></li>
-					<li class="social-btn social-btn-fb"><a href="https://www.facebook.com">Facebook</a></li>
-					<li class="social-btn social-btn-insta"><a href="https://www.instagram.com">Instagram</a></li>
+					<li class="social-btn social-btn-vk">
+            <a href="https://www.vk.com">Вконтакте</a>
+          </li>
+					<li class="social-btn social-btn-fb">
+            <a href="https://www.facebook.com">Facebook</a>
+          </li>
+					<li class="social-btn social-btn-insta">
+            <a href="https://www.instagram.com">Instagram</a>
+          </li>
 				</ul>
 			</div>
 
-			<div class="copyright">
-				<span class="footer-copyright-title">Разработано:</span>
+			<p class="copyright">
+				<b class="footer-copyright-title">Разработано:</b>
 				<a href="https://www.htmlacademy.ru" class="btn footer-copyright-btn">HTML Academy</a>
-			</div>
+			</p>
 
   	</footer>
 
