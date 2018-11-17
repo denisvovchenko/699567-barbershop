@@ -30,5 +30,6 @@
     "gulp-svgo": "^1.5.4",
     "gulp-uglify": "^3.0.1",
     "imagemin-pngquant": "^6.0.0"
-  }
+  },
+  "dependencies": {}
 }

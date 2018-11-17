@@ -66,7 +66,7 @@ gulp.task('watch', ['browser-sync', 'sass'], () => {
 });
 
 gulp.task('build', ['clean', 'sass', 'img'], () => {
-  var buildHtml = gulp.src('app/**/*.html')
+  var buildHtml = gulp.src('app/*.html')
                       .pipe(gulp.dest('dist'));
   var buildCss = gulp.src('app/css/**/*.css')
                     .pipe(gulp.dest('dist/css'));
