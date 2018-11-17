@@ -6,6 +6,8 @@ a {
   text-decoration: none; }
 
 ul {
+  padding: 0;
+  margin: 0;
   list-style: none; }
 
 .visually-hidden {
@@ -92,3 +94,20 @@ ul {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1; }
+
+.features {
+  color: #f7f4f1; }
+  .features__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .features__item {
+    width: 300px; }
+
+.item-features {
+  text-align: center; }
+  .item-features__title {
+    font-size: 30px;
+    line-height: 42px; }
+  .item-features__descr {
+    padding: 0 10px; }
