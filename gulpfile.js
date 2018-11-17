@@ -72,7 +72,7 @@ gulp.task('build', ['clean', 'sass', 'img'], () => {
                     .pipe(gulp.dest('dist/css'));
 });
 
-gulp.task('bulid:html', () => {
+gulp.task('build:html', () => {
   return gulp.src('app/**/*.html')
             .pipe(rigger())
             .pipe(gulp.dest('dist'));
