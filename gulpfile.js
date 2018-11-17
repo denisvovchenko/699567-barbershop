@@ -13,7 +13,7 @@ var gulp = require('gulp'),
     pngQuant = require('imagemin-pngquant');
 
 gulp.task('sass', () => {
-  return gulp.src('app/sass/**/*.scss')
+  return gulp.src('app/scss/**/*.scss')
              .pipe(sass({'output': 'expanded'})
                     .on('error', sass.logError))
              .pipe(autoprefixer(['last 4 versions', '> 1%'], 
@@ -60,7 +60,7 @@ gulp.task('svg', () => {
             .pipe(gulp.dest('dist/svg'));
 });
 
-gulp.task('watch', ['browser-sync'], () => {
+gulp.task('watch', ['browser-sync', 'sass'], () => {
   gulp.watch('app/scss/**/*.scss', ['sass']);
   gulp.watch('app/**/*.html', browserSync.reload);
 });
@@ -73,7 +73,7 @@ gulp.task('build', ['clean', 'sass', 'img'], () => {
 });
 
 gulp.task('build:html', () => {
-  return gulp.src('app/**/*.html')
+  return gulp.src('app/*.html')
             .pipe(rigger())
             .pipe(gulp.dest('dist'));
 });
