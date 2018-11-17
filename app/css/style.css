@@ -1,3 +1,8 @@
+.features .item-features__title::after {
+  content: "";
+  position: absolute;
+}
+
 *,
 *::before,
 *::after {
@@ -35,6 +40,10 @@ h2 {
   border: none;
   text-transform: uppercase;
   cursor: pointer;
+}
+
+.btn:hover, .btn:focus {
+  background-color: #663d15;
 }
 
 .visually-hidden {
@@ -169,9 +178,22 @@ h2 {
 }
 
 .features .item-features__title {
+  position: relative;
+  padding-bottom: 55px;
+  margin: 0;
   font-size: 30px;
   line-height: 42px;
-  margin: 0;
+}
+
+.features .item-features__title::after {
+  top: 50px;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  -webkit-transform: translate(-50%) rotate(45deg);
+      -ms-transform: translate(-50%) rotate(45deg);
+          transform: translate(-50%) rotate(45deg);
 }
 
 .features .item-features__descr {
@@ -306,6 +328,11 @@ h2 {
   border: 2px solid #000101;
 }
 
+.order .form-order__input:focus {
+  border: 2px solid #663d15;
+  outline: none;
+}
+
 .order .form-order__btn {
   margin-top: 10px;
 }
@@ -341,6 +368,11 @@ h2 {
 
 .footer__copyright .btn {
   padding: 14px 30px;
+}
+
+.footer__copyright .btn:hover, .footer__copyright .btn:focus {
+  color: #000;
+  background: #fff;
 }
 
 .footer .social-footer p {

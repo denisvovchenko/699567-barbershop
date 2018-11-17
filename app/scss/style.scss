@@ -1,3 +1,8 @@
+%pseudo {
+  content: "";
+  position: absolute;
+}
+
 *,
 *::before,
 *::after {
@@ -39,6 +44,11 @@ h2 {
   text-transform: uppercase;
 
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: #663d15;
+  }
 }
 
 .visually-hidden {
@@ -157,10 +167,26 @@ h2 {
     text-align: center;
   
     &__title {
+      position: relative;
+
+      padding-bottom: 55px;
+      margin: 0;
+
       font-size: 30px;
       line-height: 42px;
 
-      margin: 0;
+      &::after {
+        @extend %pseudo;
+        top: 50px;
+        left: 50%;
+
+        width: 20px;
+        height: 20px;
+
+        background-color: #fff;
+        
+        transform: translate(-50%) rotate(45deg);
+      }
     }
     
     &__descr {
@@ -295,6 +321,11 @@ h2 {
 
       background-color: #f9f6f3;
       border: 2px solid #000101;
+
+      &:focus {
+        border: 2px solid #663d15;
+        outline: none;
+      }
     }
 
     &__btn {
@@ -338,6 +369,13 @@ h2 {
 
     .btn {
       padding: 14px 30px;
+
+      &:hover,
+      &:focus {
+        color: #000;
+        
+        background: #fff;
+      }
     }
 
   }
