@@ -191,3 +191,9 @@ h2 {
       min-width: 140px; }
       .gallery__btn-wrapper .btn:first-child {
         margin-right: 20px; }
+
+.contact__descr {
+  margin: 0 0 25px; }
+
+.contact__btn:first-child {
+  margin-right: 20px; }
