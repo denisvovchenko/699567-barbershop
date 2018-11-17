@@ -1,0 +1,34 @@
+{
+  "name": "barbershop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/denisvovchenko/699567-barbershop.git"
+  },
+  "author": "Denys",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/denisvovchenko/699567-barbershop/issues"
+  },
+  "homepage": "https://github.com/denisvovchenko/699567-barbershop#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-cache": "^1.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-rigger": "^0.5.8",
+    "gulp-sass": "^4.0.2",
+    "gulp-svgo": "^1.5.4",
+    "gulp-uglify": "^3.0.1",
+    "imagemin-pngquant": "^6.0.0"
+  }
+}
