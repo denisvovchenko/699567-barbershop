@@ -135,7 +135,13 @@ h2 {
 
 }
 
+.page__main {
+  padding: 65px 0;
+}
+
 .features {
+  margin-bottom: 80px;
+
   color: #f7f4f1;
 
   &__list {
@@ -153,10 +159,13 @@ h2 {
     &__title {
       font-size: 30px;
       line-height: 42px;
+
+      margin: 0;
     }
     
     &__descr {
       padding: 0 10px;
+      margin: 0;
     }
   
   }
@@ -174,6 +183,10 @@ h2 {
   
   background: #fff url("../img/white-bg.png");
   background-size: 50px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 
   &::before {
     content: "";
@@ -252,4 +265,120 @@ h2 {
       margin-right: 20px;
     }
   }
+
+}
+
+.order {
+  max-width: 300px;
+
+  .form-order {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &__label {
+      flex-basis: 140px;
+      margin-bottom: 10px;
+
+      span {
+        display: block;
+        padding-left: 15px;
+        margin-bottom: 5px;
+      }
+    }
+
+    &__input {
+      max-width: 140px;
+      padding: 10px 15px;
+
+      color: rgba(0, 0, 0, 0.7);
+
+      background-color: #f9f6f3;
+      border: 2px solid #000101;
+    }
+
+    &__btn {
+      margin-top: 10px;
+    }
+  }
+
+}
+
+.footer {
+  padding: 60px 0 40px;
+   
+  background: url("../img/grey-bg.png");
+  background-size: 50px;
+
+  p {
+    margin: 0;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__contact {
+    
+    a {
+      color: #fff;
+
+      text-decoration: underline;
+    }
+  }
+
+  &__copyright {
+
+    p {
+      margin-bottom: 15px;
+
+      text-align: center;
+    }
+
+    .btn {
+      padding: 14px 30px;
+    }
+
+  }
+
+  .social-footer {
+    p {
+      margin-bottom: 25px;
+      
+      text-align: center;
+    }
+
+    &__list {
+      display: flex;
+    }
+
+    &__item {
+      margin-right: 6px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    &__link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 43px;
+      height: 43px;
+
+      background-color: #000;
+    
+      &:hover,
+      &:focus {
+        background: #fff;
+
+        path {
+          fill: #000;
+        }
+      }
+    }
+  }
+
 }

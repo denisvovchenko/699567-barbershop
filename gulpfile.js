@@ -14,7 +14,7 @@ var gulp = require('gulp'),
 
 gulp.task('sass', () => {
   return gulp.src('app/scss/**/*.scss')
-             .pipe(sass({'output': 'expanded'})
+             .pipe(sass({outputStyle: 'expanded'})
                     .on('error', sass.logError))
              .pipe(autoprefixer(['last 4 versions', '> 1%'], 
                                   {cascade: true}))
