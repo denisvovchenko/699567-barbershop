@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +13,8 @@
   
   <title>Barbershop</title>
 </head>
-<body class="page">
+
+<body class="page-shop shop">
 
   <header class="page__main-header main-header">
     <nav class="page__main-nav main-nav">
@@ -53,129 +55,176 @@
     
     </nav>
   </header>
-  
+
   <div class="container">
+
     <main class="page__main main">
 
-      <section class="features">
-        <h2 class="features__title visually-hidden">Наши преимущества</h2>
-        <ul class="features__list">
-          <li class="features__item item-features">
-            <h3 class="item-features__title">Быстро</h3>
-            <p class="item-features__descr">
-              Мы делаем свою работу быстро! Два часа пролетят незаметно и вы — счастливый обладатель стильной стрижки-минутки!
-            </p>
+      <h1>Средство для ухода</h1>
+
+      <div class="breadcrumb">
+        <ul class="breadcrumb__list">
+          <li class="breadcrumb__items">
+            <a class="breadcrumb__link" href="/">Главная</a>
           </li>
-          <li class="features__item item-features">
-            <h3 class="item-features__title">Круто</h3>
-            <p class="item-features__descr">
-              Забудьте, как вы стриглись раньше. <br />
-              Мы сделаем из вас звезду футбола или кино! <br />
-              Во всяком случае внешне.
-            </p>
+          <li class="breadcrumb__items">
+            <a class="breadcrumb__link" href="#">Магазин</a>
           </li>
-          <li class="features__item item-features">
-            <h3 class="item-features__title">Дорого</h3>
-            <p class="item-features__descr">
-              Наши мастера — профессионалы своего дела и не могут стоить дешево. К тому же, разве цена не дает определеный статус?
-            </p>
+          <li class="breadcrumb__items breadcrumb__item--current">
+            Средства для ухода
           </li>
         </ul>
-      </section>
-      
-      <div class="sections-wrapper">
-    
-        <section class="news">
-          <h2 class="news__title">Новости</h2>
-    
-          <ul class="news__list">
-            <li class="news__item">
-              <p class="news__descr">Нам наконец завезли ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки</p>
-              <time class="news__date" datetime="11.1.2018">11 января</time>
-            </li>
-            <li class="news__item">
-              <p class="news__descr">В нашей команде пополнение, Борис «Бритва» Стригунец, обладaтель множества титулов и наград пополнил наши стройные ряды</p>
-              <time class="news__date" datetime="18.1.2018">18 января</time>
-            </li>
-          </ul>
-    
-          <a href="#" class="news__btn btn">Все новости</a>
-        </section>
-    
-        <section class="gallery">
-          <h2 class="gallery__title">Фотогалерея</h2>
-          
-          <div class="gallery__slider">
-            <img src="/img/gallery-photo-1.webp" alt="Фото нашего салона"  
-                  width="286" height="164" />
-          </div>
-    
-          <div class="gallery__btn-wrapper">
-            <button class="gallery__btn gallery__btn--prev btn">Назад</button>
-            <button class="gallery__btn gallery__btn--next btn">Вперед</button>
-          </div>
-        </section>
-    
-      </div>
-    
-      <div class="sections-wrapper">
-    
-        <section class="contact">
-          <h2 class="contact__title">Контактная информация</h2>
-    
-          <p class="contact__descr">
-            Барбершоп «Бородинский» <br />
-            Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8 <br />
-            Телефон: +7 (495) 666-02-66
-          </p>
-          <p class="contact__descr">
-            Время работы: <br />
-            Пн—Пт: с 10:00 до 22:00 <br />
-            Сб—Вс: с 10:00 до 19:00
-          </p>
-    
-          <div class="contact__btn-wrapper">
-            <a class="contact__btn btn" href="#">Как проехать</a>
-            <a class="contact__btn btn" href="#">Обратная связь</a>
-          </div>
-        </section>
-    
-        <section class="order">
-          <h2>Записаться</h2>
-          <p class="order__desrc">
-            Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони
-          </p>
-    
-          <form class="order__form form-order" action="/">
-            
-            <label class="form-order__label">
-              <span>Дата</span>
-              <input type="text" class="form-order__input">
-            </label>
-            
-            <label class="form-order__label">
-              <span>Время</span>
-              <input type="text" class="form-order__input">
-            </label>
-            
-            <label class="form-order__label">
-              <span>Ваше имя</span>
-              <input type="text" class="form-order__input">
-            </label>
-            
-            <label class="form-order__label">
-              <span>Телефон</span>
-              <input type="text" class="form-order__input">
-            </label>
-    
-            <button type="submit" class="form-order__btn btn">Отправить</button>
-    
-          </form>
-        </section>
-    
       </div>
 
+      <aside class="page__aside filter">
+        <form action="post" class="filter__form">
+          <fieldset class="filter__group filter__group--manufacturers">
+            <h2 class="filter__title">Производители</h2>
+            <ul class="filter__list">
+
+              <li class="filter__item">
+                <label class="filter__label">
+                  <input type="checkbox" name="manufacturer">
+                  <span class="filter__descr">Baxter of California</span>
+                </label>
+              </li>
+
+              <li class="filter__item">
+                <label class="filter__label">
+                  <input type="checkbox" name="manufacturer">
+                  <span class="filter__descr">Mr Natty</span>
+                </label>
+              </li>
+
+              <li class="filter__item">
+                <label class="filter__label">
+                  <input type="checkbox" name="manufacturer">
+                  <span class="filter__descr">Suavecito</span>
+                </label>
+              </li>
+
+              <li class="filter__item">
+                <label class="filter__label">
+                  <input type="checkbox" name="manufacturer">
+                  <span class="filter__descr">Murray's</span>
+                </label>
+              </li>
+
+              <li class="filter__item">
+                <label class="filter__label">
+                  <input type="checkbox" name="manufacturer">
+                  <span class="filter__descr">American Crew</span>
+                </label>
+              </li>
+
+              <li class="filter__item">
+                <label class="filter__label">
+                  <input type="checkbox" name="manufacturer">
+                  <span class="filter__descr"></span>
+                </label>
+              </li>
+
+            </ul>
+          </fieldset>
+
+          <fieldset class="filter__group filter__group--good-groups">
+            <h2 class="filter__title">Группы товаров</h2>
+            <ul class="filter__list">
+              <li class="filter__item">
+                <label class="filter__label">
+                  <input type="radio" name="good-group">
+                  <span class="filter__text">Бритвенные принадлежности</span>
+                </label>
+              </li>
+
+              <li class="filter__item">
+                <label class="filter__label">
+                  <input type="radio" name="good-group">
+                  <span class="filter__text">Средства для ухода</span>
+                </label>
+              </li>
+
+              <li class="filter__item">
+                <label class="filter__label">
+                  <input type="radio" name="good-group">
+                  <span class="filter__text">Аксуссуары</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <button type="submit" class="filter__btn btn">Показать</button>
+        </form>
+      </aside>
+
+      <section class="catalog">
+        <ul class="catalog__list">
+          
+          <li class="catalog__item item-catalog">
+            <img class="item-catalog__image" src="" alt="">
+            <h3 class="item-catalog__title"></h3>
+            <span class="item-catalog__price"></span>
+            <a class="btn item-catalog__link" href="#"></a>
+          </li>
+          
+          <li class="catalog__item item-catalog">
+            <img class="item-catalog__image" src="" alt="">
+            <h3 class="item-catalog__title"></h3>
+            <span class="item-catalog__price"></span>
+            <a class="btn item-catalog__link" href="#"></a>
+          </li>
+
+          <li class="catalog__item item-catalog">
+            <img class="item-catalog__image" src="" alt="">
+            <h3 class="item-catalog__title"></h3>
+            <span class="item-catalog__price"></span>
+            <a class="btn item-catalog__link" href="#"></a>
+          </li>
+          
+          <li class="catalog__item item-catalog">
+            <img class="item-catalog__image" src="" alt="">
+            <h3 class="item-catalog__title"></h3>
+            <span class="item-catalog__price"></span>
+            <a class="btn item-catalog__link" href="#"></a>
+          </li>
+
+          <li class="catalog__item item-catalog">
+            <img class="item-catalog__image" src="" alt="">
+            <h3 class="item-catalog__title"></h3>
+            <span class="item-catalog__price"></span>
+            <a class="btn item-catalog__link" href="#"></a>
+          </li>
+
+          <li class="catalog__item item-catalog">
+            <img class="item-catalog__image" src="" alt="">
+            <h3 class="item-catalog__title"></h3>
+            <span class="item-catalog__price"></span>
+            <a class="btn item-catalog__link" href="#"></a>
+          </li>
+
+        </ul>
+
+        <div class="pagination">
+          <ul class="pagination__list">
+            <li class="pagination__item">
+              <a href="" class="pagination__link">1</a>
+            </li>
+            <li class="pagination__item">
+              <a href="" class="pagination__link">2</a>
+            </li>
+            <li class="pagination__item">
+              <a href="" class="pagination__link">3</a>
+            </li>
+            <li class="pagination__item">
+              <a href="" class="pagination__link">4</a>
+            </li>
+          </ul>
+        </div>
+
+      </section>
+
     </main>
+
   </div>
 
   <footer class="page__main-footer main-footer">
@@ -226,4 +275,5 @@
   </footer>
 
 </body>
+
 </html>

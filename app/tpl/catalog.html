@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  //= parts/head.html
+</head>
+
+<body class="page-shop shop">
+
+  <header class="page__main-header main-header">
+    //= parts/header.html
+  </header>
+
+  <div class="container">
+
+    <main class="page__main main">
+
+      <h1>Средство для ухода</h1>
+
+      <div class="breadcrumb">
+        <ul class="breadcrumb__list">
+          <li class="breadcrumb__items">
+            <a class="breadcrumb__link" href="/">Главная</a>
+          </li>
+          <li class="breadcrumb__items">
+            <a class="breadcrumb__link" href="#">Магазин</a>
+          </li>
+          <li class="breadcrumb__items breadcrumb__item--current">
+            Средства для ухода
+          </li>
+        </ul>
+      </div>
+
+      <aside class="page__aside filter">
+        <form action="post" class="filter__form">
+          <fieldset class="filter__group filter__group--manufacturers">
+            <h2 class="filter__title">Производители</h2>
+            <ul class="filter__list">
+
+              <li class="filter__item">
+                <label class="filter__label">
+                  <input type="checkbox" name="manufacturer">
+                  <span class="filter__descr">Baxter of California</span>
+                </label>
+              </li>
+
+              <li class="filter__item">
+                <label class="filter__label">
+                  <input type="checkbox" name="manufacturer">
+                  <span class="filter__descr">Mr Natty</span>
+                </label>
+              </li>
+
+              <li class="filter__item">
+                <label class="filter__label">
+                  <input type="checkbox" name="manufacturer">
+                  <span class="filter__descr">Suavecito</span>
+                </label>
+              </li>
+
+              <li class="filter__item">
+                <label class="filter__label">
+                  <input type="checkbox" name="manufacturer">
+                  <span class="filter__descr">Murray's</span>
+                </label>
+              </li>
+
+              <li class="filter__item">
+                <label class="filter__label">
+                  <input type="checkbox" name="manufacturer">
+                  <span class="filter__descr">American Crew</span>
+                </label>
+              </li>
+
+              <li class="filter__item">
+                <label class="filter__label">
+                  <input type="checkbox" name="manufacturer">
+                  <span class="filter__descr"></span>
+                </label>
+              </li>
+
+            </ul>
+          </fieldset>
+
+          <fieldset class="filter__group filter__group--good-groups">
+            <h2 class="filter__title">Группы товаров</h2>
+            <ul class="filter__list">
+              <li class="filter__item">
+                <label class="filter__label">
+                  <input type="radio" name="good-group">
+                  <span class="filter__text">Бритвенные принадлежности</span>
+                </label>
+              </li>
+
+              <li class="filter__item">
+                <label class="filter__label">
+                  <input type="radio" name="good-group">
+                  <span class="filter__text">Средства для ухода</span>
+                </label>
+              </li>
+
+              <li class="filter__item">
+                <label class="filter__label">
+                  <input type="radio" name="good-group">
+                  <span class="filter__text">Аксуссуары</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <button type="submit" class="filter__btn btn">Показать</button>
+        </form>
+      </aside>
+
+      <section class="catalog">
+        <ul class="catalog__list">
+          
+          <li class="catalog__item item-catalog">
+            <img class="item-catalog__image" src="" alt="">
+            <h3 class="item-catalog__title"></h3>
+            <span class="item-catalog__price"></span>
+            <a class="btn item-catalog__link" href="#"></a>
+          </li>
+          
+          <li class="catalog__item item-catalog">
+            <img class="item-catalog__image" src="" alt="">
+            <h3 class="item-catalog__title"></h3>
+            <span class="item-catalog__price"></span>
+            <a class="btn item-catalog__link" href="#"></a>
+          </li>
+
+          <li class="catalog__item item-catalog">
+            <img class="item-catalog__image" src="" alt="">
+            <h3 class="item-catalog__title"></h3>
+            <span class="item-catalog__price"></span>
+            <a class="btn item-catalog__link" href="#"></a>
+          </li>
+          
+          <li class="catalog__item item-catalog">
+            <img class="item-catalog__image" src="" alt="">
+            <h3 class="item-catalog__title"></h3>
+            <span class="item-catalog__price"></span>
+            <a class="btn item-catalog__link" href="#"></a>
+          </li>
+
+          <li class="catalog__item item-catalog">
+            <img class="item-catalog__image" src="" alt="">
+            <h3 class="item-catalog__title"></h3>
+            <span class="item-catalog__price"></span>
+            <a class="btn item-catalog__link" href="#"></a>
+          </li>
+
+          <li class="catalog__item item-catalog">
+            <img class="item-catalog__image" src="" alt="">
+            <h3 class="item-catalog__title"></h3>
+            <span class="item-catalog__price"></span>
+            <a class="btn item-catalog__link" href="#"></a>
+          </li>
+
+        </ul>
+
+        <div class="pagination">
+          <ul class="pagination__list">
+            <li class="pagination__item">
+              <a href="" class="pagination__link">1</a>
+            </li>
+            <li class="pagination__item">
+              <a href="" class="pagination__link">2</a>
+            </li>
+            <li class="pagination__item">
+              <a href="" class="pagination__link">3</a>
+            </li>
+            <li class="pagination__item">
+              <a href="" class="pagination__link">4</a>
+            </li>
+          </ul>
+        </div>
+
+      </section>
+
+    </main>
+
+  </div>
+
+  <footer class="page__main-footer main-footer">
+    //= parts/footer.html
+  </footer>
+
+</body>
+
+</html>

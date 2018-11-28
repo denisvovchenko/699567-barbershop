@@ -68,12 +68,12 @@ h2 {
   font-size: 14px;
   font-weight: 700;
   line-height: 24px;
-  color: #fff;
-  background: url("../img/index-bg.jpg");
   text-transform: uppercase;
+  color: #fff;
+  background: #000000 url("../img/index-bg.webp") no-repeat;
 }
 
-.page__header--inner {
+.page__main-header--inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -337,17 +337,17 @@ h2 {
   margin-top: 10px;
 }
 
-.footer {
+.main-footer {
   padding: 60px 0 40px;
   background: url("../img/grey-bg.png");
   background-size: 50px;
 }
 
-.footer p {
+.main-footer p {
   margin: 0;
 }
 
-.footer__container {
+.main-footer__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -356,45 +356,45 @@ h2 {
           justify-content: space-between;
 }
 
-.footer__contact a {
+.main-footer__contact a {
   color: #fff;
   text-decoration: underline;
 }
 
-.footer__copyright p {
+.main-footer__copyright p {
   margin-bottom: 15px;
   text-align: center;
 }
 
-.footer__copyright .btn {
+.main-footer__copyright .btn {
   padding: 14px 30px;
 }
 
-.footer__copyright .btn:hover, .footer__copyright .btn:focus {
+.main-footer__copyright .btn:hover, .main-footer__copyright .btn:focus {
   color: #000;
   background: #fff;
 }
 
-.footer .social-footer p {
+.main-footer .social-footer p {
   margin-bottom: 25px;
   text-align: center;
 }
 
-.footer .social-footer__list {
+.main-footer .social-footer__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.footer .social-footer__item {
+.main-footer .social-footer__item {
   margin-right: 6px;
 }
 
-.footer .social-footer__item:last-child {
+.main-footer .social-footer__item:last-child {
   margin-right: 0;
 }
 
-.footer .social-footer__link {
+.main-footer .social-footer__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -409,10 +409,10 @@ h2 {
   background-color: #000;
 }
 
-.footer .social-footer__link:hover, .footer .social-footer__link:focus {
+.main-footer .social-footer__link:hover, .main-footer .social-footer__link:focus {
   background: #fff;
 }
 
-.footer .social-footer__link:hover path, .footer .social-footer__link:focus path {
+.main-footer .social-footer__link:hover path, .main-footer .social-footer__link:focus path {
   fill: #000;
 }

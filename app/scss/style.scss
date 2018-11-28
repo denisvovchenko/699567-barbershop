@@ -77,19 +77,17 @@ h2 {
     weight: 700;
   }
   line-height: 24px;
-  color: #fff;
-
-  background: url("../img/index-bg.jpg");
   text-transform: uppercase;
 
-  &__header {
+  color: #fff;
+  background: #000000 url("../img/index-bg.webp") no-repeat;
+}
 
-    &--inner {
-      display: flex;
-      flex-direction: column;
-    }
+.page__main-header {
+  &--inner {
+    display: flex;
+    flex-direction: column;
   }
-
 }
 
 .main-nav {
@@ -335,7 +333,7 @@ h2 {
 
 }
 
-.footer {
+.main-footer {
   padding: 60px 0 40px;
    
   background: url("../img/grey-bg.png");
