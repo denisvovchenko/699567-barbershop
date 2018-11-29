@@ -25,6 +25,12 @@ ul {
   list-style: none;
 }
 
+h1 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 42px;
+}
+
 h2 {
   margin: 0 0 20px;
 
@@ -79,22 +85,25 @@ h2 {
   line-height: 24px;
   text-transform: uppercase;
 
-  color: #fff;
-  background: #000000 url("../img/index-bg.webp") no-repeat;
-}
+  &-index {
+    color: #ffffff;
+    background: #000000 url("../img/index-bg.webp") no-repeat;
+  }
 
-.page__main-header {
-  &--inner {
-    display: flex;
-    flex-direction: column;
+  &-shop {
+    color: #000000;
+    background: #eeeeee url("../img/white-bg.png");
   }
 }
 
 .main-nav {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  .page-index & {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: transparent;
+  }
 
   &__wrapper {
     width: 100%;
@@ -102,12 +111,12 @@ h2 {
     justify-content: space-between;
     margin-bottom: 60px;
 
-    background-color: #000;
+    background-color: #000;    
+  }
 
-    .container {
-      display: flex;
-      justify-content: space-between;
-    }
+  &__wrapper .container {
+    display: flex;
+    justify-content: space-between;
   }
 
   &__list {
@@ -138,9 +147,18 @@ h2 {
   }
 
   &__logo {
-    order: 1;
-  }
+    .page-index & {
+      order: 1;
+    }
 
+    margin-right: 20px;
+  }
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #000;
 }
 
 .page__main {
@@ -335,7 +353,8 @@ h2 {
 
 .main-footer {
   padding: 60px 0 40px;
-   
+
+  color: #fff; 
   background: url("../img/grey-bg.png");
   background-size: 50px;
 

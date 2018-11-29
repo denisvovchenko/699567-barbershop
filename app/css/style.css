@@ -25,6 +25,12 @@ ul {
   list-style: none;
 }
 
+h1 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 42px;
+}
+
 h2 {
   margin: 0 0 20px;
   font-size: 30px;
@@ -69,24 +75,32 @@ h2 {
   font-weight: 700;
   line-height: 24px;
   text-transform: uppercase;
-  color: #fff;
+}
+
+.page-index {
+  color: #ffffff;
   background: #000000 url("../img/index-bg.webp") no-repeat;
 }
 
-.page__main-header--inner {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+.page-shop {
+  color: #000000;
+  background: #eeeeee url("../img/white-bg.png");
 }
 
 .main-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #000;
+}
+
+.page-index .main-nav {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -97,6 +111,7 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: transparent;
 }
 
 .main-nav__wrapper {
@@ -149,6 +164,10 @@ h2 {
 }
 
 .main-nav__logo {
+  margin-right: 20px;
+}
+
+.page-index .main-nav__logo {
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1;
@@ -339,6 +358,7 @@ h2 {
 
 .main-footer {
   padding: 60px 0 40px;
+  color: #fff;
   background: url("../img/grey-bg.png");
   background-size: 50px;
 }
