@@ -1,0 +1,14 @@
+{
+  "name": "testweb",
+  "short_name": "testweb",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#000",
+  "description": "test",
+  "theme_color": "#000",
+  "icons": [{
+    "src": "img/svg/logosvg.svg",
+    "sizes": "16x16",
+    "type": "image/svg"
+  }]
+}

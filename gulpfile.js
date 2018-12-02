@@ -64,6 +64,7 @@ gulp.task('watch', ['browser-sync', 'sass'], () => {
   gulp.watch('app/scss/**/*.scss', ['sass']);
   gulp.watch('app/tpl/**/*.html', ['prebuild:html']);
   gulp.watch('app/*.html', browserSync.reload);
+  gulp.watch('app/js/**/*.js', browserSync.reload);
 });
 
 gulp.task('build', ['clean', 'sass', 'img'], () => {
@@ -71,6 +72,9 @@ gulp.task('build', ['clean', 'sass', 'img'], () => {
                       .pipe(gulp.dest('dist'));
   var buildCss = gulp.src('app/css/**/*.css')
                     .pipe(gulp.dest('dist/css'));
+
+  var buildJs = gulp.src('app/js/**/*.js')
+                    .pipe(gulp.dest('dist/js'));
 });
 
 gulp.task('prebuild:html', () => {
