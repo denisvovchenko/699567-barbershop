@@ -17,9 +17,7 @@
   
   <title>Barbershop</title>
 </head>
-
-<body class="page page-shop">
-
+<body class="page page-product">
   <header class="page__main-header main-header">
     <nav class="page__main-nav main-nav">
     
@@ -59,217 +57,102 @@
   </header>
 
   <div class="container">
-
     <main class="page__main main">
 
       <header class="inner-header">
-        <h1>Средство для ухода</h1>
+        <h1>Набор для путешествий «Baxter of California»</h1>
 
         <div class="breadcrumb">
           <ul class="breadcrumb__list">
             <li class="breadcrumb__item">
-              <a class="breadcrumb__link" href="/">Главная</a>
+              <a class="breadcrumb__link" href="/">Главная</>
             </li>
             <li class="breadcrumb__item">
               <a class="breadcrumb__link" href="#">Магазин</a>
             </li>
-            <li class="breadcrumb__item breadcrumb__item--current">Средства для ухода</li>
+            <li class="breadcrumb__item">
+              <a class="breadcrumb__link" href="catalog.html">Средства для ухода</a>
+            </li>
+            <li class="breadcrumb__item breadcrumb__item--current">
+              Набор для путешествий «Baxter of California»
+            </li>
           </ul>
         </div>
-
       </header>
 
-      <div class="inner-container">
-
-        <aside class="page__aside filter">
-          <h2 class="visually-hidden">Фильтр каталога</h2>
-
-          <form action="post" class="filter__form">
-            <fieldset class="filter__group filter__group--manufacturers">
-              <h3 class="filter__title">Производители:</h3>
-              <ul class="filter__list">
-
-                <li class="filter__item">
-                  <label class="filter__label">
-                    <input class="visually-hidden" type="checkbox" name="manufacturer">
-                    <span class="filter__descr">Baxter of California</span>
-                  </label>
-                </li>
-
-                <li class="filter__item">
-                  <label class="filter__label">
-                    <input class="visually-hidden" type="checkbox" name="manufacturer">
-                    <span class="filter__descr">Mr Natty</span>
-                  </label>
-                </li>
-
-                <li class="filter__item">
-                  <label class="filter__label">
-                    <input class="visually-hidden" type="checkbox" name="manufacturer">
-                    <span class="filter__descr">Suavecito</span>
-                  </label>
-                </li>
-
-                <li class="filter__item">
-                    <label class="filter__label">
-                      <input class="visually-hidden" type="checkbox" name="manufacturer">
-                      <span class="filter__descr">Malin+Goetz</span>
-                    </label>
-                  </li>
-
-                <li class="filter__item">
-                  <label class="filter__label">
-                    <input class="visually-hidden" type="checkbox" name="manufacturer">
-                    <span class="filter__descr">Murray's</span>
-                  </label>
-                </li>
-
-                <li class="filter__item">
-                  <label class="filter__label">
-                    <input class="visually-hidden" type="checkbox" name="manufacturer">
-                    <span class="filter__descr">American Crew</span>
-                  </label>
-                </li>
-
-              </ul>
-            </fieldset>
-
-            <fieldset class="filter__group filter__group--good-groups">
-              <h3 class="filter__title">Группы товаров:</h3>
-              <ul class="filter__list">
-                <li class="filter__item">
-                  <label class="filter__label">
-                    <input class="visually-hidden" type="radio" name="good-group">
-                    <span class="filter__descr">Бритвенные принадлежности</span>
-                  </label>
-                </li>
-
-                <li class="filter__item">
-                  <label class="filter__label">
-                    <input class="visually-hidden" type="radio" name="good-group" disabled>
-                    <span class="filter__descr">Средства для ухода</span>
-                  </label>
-                </li>
-
-                <li class="filter__item">
-                  <label class="filter__label">
-                    <input class="visually-hidden" type="radio" name="good-group">
-                    <span class="filter__descr">Аксуссуары</span>
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
-
-            <button type="submit" class="filter__btn btn">Показать</button>
-          </form>
-        </aside>
-
-        <section class="catalog">
-          <ul class="catalog__list">
-            
-            <li class="catalog__item item-catalog">
-              <img class="item-catalog__image" src="../img/good-1.webp" srcset="../img/good-1.jpg" width="200" height="165" alt="">
-
-              <div class="item-catalog__body">
-                <p class="item-catalog__title">
-                  Набор для путешествий <br />
-                  «Baxter of California»
-                </p>
-                <span class="item-catalog__price product__price">2 900 ₽</span>
-                <a class="btn item-catalog__buy-btn product__buy-btn" href="product.html">Купить</a>
-              </div>
+      <div class="product__wrapper">
+        <section class="product-gallery">
+          <div class="product-gallery__main-image">
+            <img src="img/product-1.jpg"
+                  srcset="img/product-1.webp"
+                  width="460"
+                  height="498"
+                  alt="">
+          </div>
+          <ul class="product-gallery__list">
+            <li class="product-gallery__item">
+              <a class="product-gallery__link" href="#">
+                <img class="product-gallery__image" 
+                      src="img/product-mini-1.jpg" 
+                      srcset="img/product-mini-1.webp"
+                      width="164"
+                      height="173"
+                      alt="">
+              </a>
             </li>
-            
-            <li class="catalog__item item-catalog">
-              <img class="item-catalog__image" src="../img/good-2.webp" srcset="../img/good-2.jpg" width="200" height="165" alt="">
-
-              <div class="item-catalog__body">
-                <p class="item-catalog__title">
-                  Увлажняющий кондиционер <br />
-                  «Baxter of California»
-                </p>
-                <span class="item-catalog__price">750 ₽</span>
-                <a class="btn item-catalog__link" href="#">Купить</a>
-              </div>
+            <li class="product-gallery__item">
+              <a class="product-gallery__link" href="#">
+                <img class="product-gallery__image" 
+                      src="img/product-mini-2.jpg"
+                      srcset="img/product-mini-2.webp"
+                      width="164"
+                      height="173"
+                      alt="">
+              </a></li>
+            <li class="product-gallery__item">
+              <a class="product-gallery__link" href="#">
+                <img class="product-gallery__image"
+                      src="img/product-mini-3.jpg"
+                      srcset="img/product-mini-3.webp"
+                      width="164"
+                      height="173"
+                      alt="">
+              </a>
             </li>
-
-            <li class="catalog__item item-catalog">
-              <img class="item-catalog__image" src="../img/good-3.webp" srcset="../img/good-3.jpg" width="200" height="165" alt="">
-
-              <div class="item-catalog__body">
-                <p class="item-catalog__title">
-                  Гель для волос <br />
-                  «SUAVECITO»
-                </p>
-                <span class="item-catalog__price">290 ₽</span>
-                <a class="btn item-catalog__link" href="#">Купить</a>
-              </div>
-            </li>
-            
-            <li class="catalog__item item-catalog">
-              <img class="item-catalog__image" src="../img/good-4.webp" srcset="../img/good-4.jpg" width="200" height="165" alt="">
-
-              <div class="item-catalog__body">
-                <p class="item-catalog__title">
-                  Глина для укладки волос <br /> 
-                  «American crew»
-                </p>
-                <span class="item-catalog__price">500 ₽</span>
-                <a class="btn item-catalog__link" href="#">Купить</a>
-              </div>
-            </li>
-
-            <li class="catalog__item item-catalog">
-              <img class="item-catalog__image" src="../img/good-5.webp" srcset="../img/good-5.jpg" width="200" height="165" alt="">
-
-              <div class="item-catalog__body">
-                <p class="item-catalog__title">
-                  Гель для волос <br />
-                  «AMERICAN CREW»
-                </p>
-                <span class="item-catalog__price">300 ₽</span>
-                <a class="btn item-catalog__link" href="#">Купить</a>
-              </div>
-            </li>
-
-            <li class="catalog__item item-catalog">
-              <img class="item-catalog__image" src="../img/good-6.webp" srcset="../img/good-6.jpg" width="200" height="165" alt="">
-
-              <div class="item-catalog__body">
-                <p class="item-catalog__title">
-                  Набор для бритья <br />
-                  «Baxter of California»
-                </p>
-                <span class="item-catalog__price">3 900 ₽</span>
-                <a class="btn item-catalog__link" href="#">Купить</a>
-              </div>
-            </li>
-
           </ul>
+        </section>
 
-          <div class="pagination">
-            <ul class="pagination__list">
-              <li class="pagination__item pagination__item">
-                <a class="pagination__link pagination__link--current btn" href="#">1</a>
-              </li>
-              <li class="pagination__item">
-                <a href="#" class="pagination__link btn">2</a>
-              </li>
-              <li class="pagination__item">
-                <a href="#" class="pagination__link btn">3</a>
-              </li>
-              <li class="pagination__item">
-                <a href="#" class="pagination__link btn">4</a>
-              </li>
-            </ul>
+        <article class="product-info">
+
+          <p class="product-info__in-stock">
+            <span>Есть в наличии</span>
+            <span class="product-info__article">Артикул: Dexter-AE</span>
+          </p>
+
+          <p class="product-info__descr">
+            Travel Kit – необходимый аксессуар во время любого путешествия. В аккуратной кожаной сумке находится все, что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий крем, крем для бритья, крем после бритья, шампунь. Набор также может стать отличным подарком.
+          </p>
+
+          <div class="price-buy-wrapper">
+            <span class="product-info__price product__price">2 900 ₽</span>
+            <a class="btn product-info__buy-btn product__buy-btn"      
+                href="product.html">Купить</a>
           </div>
 
-        </section>
-        
+          <h3 class="product-info__list-title">В набор входят:</h3>
+
+          <ul class="classic-list">
+            <li>Средство для умывания (50 мл)</li>
+            <li>Увлажняющий крем (50 мл)</li>
+            <li>Крем для бритья (50 мл)</li>
+            <li>Крем после бритья, шампунь (50 мл)</li>
+            <li>Удобная кожаная косметичка</li>
+          </ul>
+
+        </article>
       </div>
 
     </main>
-
   </div>
 
   <footer class="page__main-footer main-footer">

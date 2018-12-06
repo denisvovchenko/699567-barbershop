@@ -22,6 +22,5 @@ pagination.forEach(function(pageNumber) {
   });
 });
 
-// var svg = new Image();
-// svg.src = '../img/svg/login.svg';
-// console.log(svg);
+var svg = new Image();
+svg.src = '../img/svg/login.svg';
